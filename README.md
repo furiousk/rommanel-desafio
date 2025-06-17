@@ -54,7 +54,7 @@ Implementação de um CRUD de cliente com os seguintes campos:
 ### 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/rommanel-desafio.git
+git clone https://github.com/furiousk/rommanel-desafio.git
 cd rommanel-desafio
 ```
 
