@@ -108,9 +108,11 @@ Rommanel/
 - A arquitetura está preparada para crescimento com eventos de domínio, integração com frontend Angular e testes de integração futuros.
 - A cobertura de testes é medida automaticamente e pode ser inspecionada visualmente.
 - Todas as validações são feitas em duas camadas: `FluentValidation` e regras de negócio no domínio (`Cliente`).
+- Foi implementado sistema de **logs persistentes em arquivo**, que podem ser consultados na pasta:  
+  `src/Rommanel.API/logs/`
 
 ---
 
 ### 🔗 Autor
 
-Desenvolvido por [Seu Nome] para o processo seletivo da Rommanel.
+Desenvolvido por Bruno Diogenes Alves para o processo seletivo da Rommanel.
