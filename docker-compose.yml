@@ -9,7 +9,16 @@ services:
       - ConnectionStrings__Default=Host=db;Database=rommanel;Username=postgres;Password=postgres
     depends_on:
       - db
-
+  frontend:
+    build:
+      context: ./frontend
+    volumes:
+      - ./frontend/rommanel-ui:/app/rommanel-ui
+    working_dir: /app/rommanel-ui
+    ports:
+      - "4200:4200"
+    command: sh -c "npm install && ng serve --host 0.0.0.0 --poll=1000"
+    #command: sh -c "npm install && ng serve --host 0.0.0.0 --port 4200"
   db:
     image: postgres:15
     restart: always

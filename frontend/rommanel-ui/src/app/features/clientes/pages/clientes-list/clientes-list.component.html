@@ -1,0 +1,30 @@
+<div class="container">
+  <h2>Lista de Clientes</h2>
+
+  <div *ngIf="loading">Carregando clientes...</div>
+  <div *ngIf="erro">{{ erro }}</div>
+
+  <table *ngIf="clientes.length && !loading" class="clientes-table">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Documento</th>
+        <th>E-mail</th>
+        <th>Telefone</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cliente of clientes">
+        <td>{{ cliente.nome }}</td>
+        <td>{{ cliente.documento }}</td>
+        <td>{{ cliente.email }}</td>
+        <td>{{ cliente.telefone }}</td>
+        <td>
+          <button (click)="deletar(cliente.id)">Excluir</button>
+          <!-- botão de editar virá depois -->
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
