@@ -1,0 +1,17 @@
+Rommanel/
+├── docker-compose.yml             
+├── .env                           
+├── backend/
+│   ├── src/
+│   │   ├── Rommanel.API/
+│   │   │   └── Dockerfile         
+│   │   ├── Rommanel.Application/
+│   │   ├── Rommanel.Domain/
+│   │   ├── Rommanel.Infrastructure/
+│   └── tests/
+│       └── Rommanel.UnitTests/
+│           └── Application
+│           └── Domain
+├── frontend/
+│   └── Dockerfile                 
+│   └── rommanel-ui/

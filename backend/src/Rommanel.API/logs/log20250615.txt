@@ -1,0 +1,149 @@
+2025-06-15 21:59:41.842 -03:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2025-06-15 21:59:41.913 -03:00 [INF] Now listening on: https://localhost:7103
+2025-06-15 21:59:41.917 -03:00 [INF] Now listening on: http://localhost:5013
+2025-06-15 21:59:42.053 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-15 21:59:42.055 -03:00 [INF] Hosting environment: Development
+2025-06-15 21:59:42.057 -03:00 [INF] Content root path: C:\Projetos\Rommanel\backend\src\Rommanel.API
+2025-06-15 21:59:45.339 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/swagger - null null
+2025-06-15 21:59:45.459 -03:00 [INF] HTTP GET /swagger started. Body: 
+2025-06-15 21:59:45.467 -03:00 [INF] HTTP GET /swagger finished in 8ms with status 301
+2025-06-15 21:59:45.479 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/swagger - 301 0 null 149.0343ms
+2025-06-15 21:59:45.482 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/swagger/index.html - null null
+2025-06-15 21:59:45.493 -03:00 [INF] HTTP GET /swagger/index.html started. Body: 
+2025-06-15 21:59:45.533 -03:00 [INF] HTTP GET /swagger/index.html finished in 39ms with status 200
+2025-06-15 21:59:45.537 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/swagger/index.html - 200 null text/html;charset=utf-8 55.3088ms
+2025-06-15 21:59:45.543 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/swagger/swagger-ui.css - null null
+2025-06-15 21:59:45.544 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/swagger/swagger-ui-bundle.js - null null
+2025-06-15 21:59:45.543 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/swagger/index.css - null null
+2025-06-15 21:59:45.543 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/swagger/swagger-ui-standalone-preset.js - null null
+2025-06-15 21:59:45.552 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/swagger/index.js - null null
+2025-06-15 21:59:45.566 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/_vs/browserLink - null null
+2025-06-15 21:59:45.571 -03:00 [INF] HTTP GET /swagger/swagger-ui.css started. Body: 
+2025-06-15 21:59:45.579 -03:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js started. Body: 
+2025-06-15 21:59:45.586 -03:00 [INF] HTTP GET /swagger/index.css started. Body: 
+2025-06-15 21:59:45.593 -03:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js started. Body: 
+2025-06-15 21:59:45.599 -03:00 [INF] HTTP GET /swagger/index.js started. Body: 
+2025-06-15 21:59:45.624 -03:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-06-15 21:59:45.624 -03:00 [INF] HTTP GET /swagger/index.js finished in 25ms with status 200
+2025-06-15 21:59:45.627 -03:00 [INF] HTTP GET /swagger/index.css finished in 40ms with status 200
+2025-06-15 21:59:45.639 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/swagger/index.js - 200 null application/javascript;charset=utf-8 86.3477ms
+2025-06-15 21:59:45.647 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/swagger/index.css - 200 202 text/css 104.4255ms
+2025-06-15 21:59:45.654 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-06-15 21:59:45.654 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-06-15 21:59:45.662 -03:00 [INF] HTTP GET /swagger/swagger-ui.css finished in 90ms with status 200
+2025-06-15 21:59:45.663 -03:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js finished in 69ms with status 200
+2025-06-15 21:59:45.667 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/swagger/swagger-ui.css - 200 154949 text/css 124.2025ms
+2025-06-15 21:59:45.669 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 125.3463ms
+2025-06-15 21:59:45.663 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/_vs/browserLink - 200 null text/javascript; charset=UTF-8 98.0224ms
+2025-06-15 21:59:45.677 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-06-15 21:59:45.686 -03:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js finished in 106ms with status 200
+2025-06-15 21:59:45.689 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/swagger/swagger-ui-bundle.js - 200 1485241 text/javascript 144.7773ms
+2025-06-15 21:59:45.776 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - null null
+2025-06-15 21:59:45.779 -03:00 [INF] HTTP GET /swagger/v1/swagger.json started. Body: 
+2025-06-15 21:59:45.793 -03:00 [INF] HTTP GET /swagger/v1/swagger.json finished in 14ms with status 200
+2025-06-15 21:59:45.796 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.9216ms
+2025-06-15 21:59:59.037 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/api/clientes/search - null null
+2025-06-15 21:59:59.047 -03:00 [INF] HTTP GET /api/clientes/search started. Body: 
+2025-06-15 21:59:59.055 -03:00 [INF] Executing endpoint 'Rommanel.API.Controllers.ClienteController.Search (Rommanel.API)'
+2025-06-15 21:59:59.093 -03:00 [INF] Route matched with {action = "Search", controller = "Cliente"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Rommanel.Application.Clientes.DTOs.ClienteDto]]] Search(System.String, System.String) on controller Rommanel.API.Controllers.ClienteController (Rommanel.API).
+2025-06-15 21:59:59.851 -03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."DataNascimento", c."Documento", c."Email", c."InscricaoEstadual", c."IsentoIE", c."Nome", c."Telefone", c."TipoPessoa", c."Endereco_Bairro", c."Endereco_CEP", c."Endereco_Cidade", c."Endereco_Estado", c."Endereco_Numero", c."Endereco_Rua"
+FROM "Clientes" AS c
+2025-06-15 21:59:59.952 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Rommanel.Application.Clientes.DTOs.ClienteDto, Rommanel.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-15 21:59:59.964 -03:00 [INF] Executed action Rommanel.API.Controllers.ClienteController.Search (Rommanel.API) in 865.146ms
+2025-06-15 21:59:59.973 -03:00 [INF] Executed endpoint 'Rommanel.API.Controllers.ClienteController.Search (Rommanel.API)'
+2025-06-15 21:59:59.975 -03:00 [INF] HTTP GET /api/clientes/search finished in 927ms with status 200
+2025-06-15 21:59:59.982 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/api/clientes/search - 200 null application/json; charset=utf-8 945.4145ms
+2025-06-15 22:00:21.433 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/api/clientes/search?nome=bru - null null
+2025-06-15 22:00:21.440 -03:00 [INF] HTTP GET /api/clientes/search started. Body: 
+2025-06-15 22:00:21.442 -03:00 [INF] Executing endpoint 'Rommanel.API.Controllers.ClienteController.Search (Rommanel.API)'
+2025-06-15 22:00:21.445 -03:00 [INF] Route matched with {action = "Search", controller = "Cliente"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Rommanel.Application.Clientes.DTOs.ClienteDto]]] Search(System.String, System.String) on controller Rommanel.API.Controllers.ClienteController (Rommanel.API).
+2025-06-15 22:00:21.559 -03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__Format_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."DataNascimento", c."Documento", c."Email", c."InscricaoEstadual", c."IsentoIE", c."Nome", c."Telefone", c."TipoPessoa", c."Endereco_Bairro", c."Endereco_CEP", c."Endereco_Cidade", c."Endereco_Estado", c."Endereco_Numero", c."Endereco_Rua"
+FROM "Clientes" AS c
+WHERE c."Nome" ILIKE @__Format_1 ESCAPE ''
+2025-06-15 22:00:21.563 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Rommanel.Application.Clientes.DTOs.ClienteDto, Rommanel.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-15 22:00:21.566 -03:00 [INF] Executed action Rommanel.API.Controllers.ClienteController.Search (Rommanel.API) in 118.9238ms
+2025-06-15 22:00:21.568 -03:00 [INF] Executed endpoint 'Rommanel.API.Controllers.ClienteController.Search (Rommanel.API)'
+2025-06-15 22:00:21.570 -03:00 [INF] HTTP GET /api/clientes/search finished in 129ms with status 200
+2025-06-15 22:00:21.572 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/api/clientes/search?nome=bru - 200 null application/json; charset=utf-8 140.0057ms
+2025-06-15 22:00:46.077 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/api/clientes/44ccef71-4913-4d3c-9928-59bf2f3a0a5b - null null
+2025-06-15 22:00:46.081 -03:00 [INF] HTTP GET /api/clientes/44ccef71-4913-4d3c-9928-59bf2f3a0a5b started. Body: 
+2025-06-15 22:00:46.083 -03:00 [INF] Executing endpoint 'Rommanel.API.Controllers.ClienteController.GetById (Rommanel.API)'
+2025-06-15 22:00:46.089 -03:00 [INF] Route matched with {action = "GetById", controller = "Cliente"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Rommanel.Application.Clientes.DTOs.ClienteDto]] GetById(System.Guid) on controller Rommanel.API.Controllers.ClienteController (Rommanel.API).
+2025-06-15 22:00:46.126 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."DataNascimento", c."Documento", c."Email", c."InscricaoEstadual", c."IsentoIE", c."Nome", c."Telefone", c."TipoPessoa", c."Endereco_Bairro", c."Endereco_CEP", c."Endereco_Cidade", c."Endereco_Estado", c."Endereco_Numero", c."Endereco_Rua"
+FROM "Clientes" AS c
+WHERE c."Id" = @__id_0
+LIMIT 1
+2025-06-15 22:00:46.132 -03:00 [INF] Executing OkObjectResult, writing value of type 'Rommanel.Application.Clientes.DTOs.ClienteDto'.
+2025-06-15 22:00:46.134 -03:00 [INF] Executed action Rommanel.API.Controllers.ClienteController.GetById (Rommanel.API) in 40.7367ms
+2025-06-15 22:00:46.136 -03:00 [INF] Executed endpoint 'Rommanel.API.Controllers.ClienteController.GetById (Rommanel.API)'
+2025-06-15 22:00:46.138 -03:00 [INF] HTTP GET /api/clientes/44ccef71-4913-4d3c-9928-59bf2f3a0a5b finished in 56ms with status 200
+2025-06-15 22:00:46.140 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/api/clientes/44ccef71-4913-4d3c-9928-59bf2f3a0a5b - 200 null application/json; charset=utf-8 64.8311ms
+2025-06-15 22:01:31.647 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7103/api/clientes - application/json 349
+2025-06-15 22:01:31.665 -03:00 [INF] HTTP POST /api/clientes started. Body: {
+  "nome": "Empresa X",
+  "documento": "12345678000100",
+  "tipoPessoa": 2,
+  "dataNascimento": "2025-06-16",
+  "telefone": "1199999999",
+  "email": "empresa@email.com",
+  "cep": "12345678",
+  "rua": "Av. Empresa",
+  "numero": "100",
+  "bairro": "Centro",
+  "cidade": "São Paulo",
+  "estado": "SP",
+  "inscricaoEstadual": "",
+  "isentoIE": false
+}
+2025-06-15 22:01:31.668 -03:00 [INF] Executing endpoint 'Rommanel.API.Controllers.ClienteController.Post (Rommanel.API)'
+2025-06-15 22:01:31.673 -03:00 [INF] Route matched with {action = "Post", controller = "Cliente"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Rommanel.Application.Clientes.Commands.CreateClienteCommand) on controller Rommanel.API.Controllers.ClienteController (Rommanel.API).
+2025-06-15 22:01:31.956 -03:00 [INF] Executed action Rommanel.API.Controllers.ClienteController.Post (Rommanel.API) in 279.8488ms
+2025-06-15 22:01:31.962 -03:00 [INF] Executed endpoint 'Rommanel.API.Controllers.ClienteController.Post (Rommanel.API)'
+2025-06-15 22:01:32.011 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7103/api/clientes - 400 null application/json 364.5881ms
+2025-06-15 22:01:47.535 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7103/api/clientes - application/json 348
+2025-06-15 22:01:47.543 -03:00 [INF] HTTP POST /api/clientes started. Body: {
+  "nome": "Empresa X",
+  "documento": "12345678000100",
+  "tipoPessoa": 2,
+  "dataNascimento": "2025-06-16",
+  "telefone": "1199999999",
+  "email": "empresa@email.com",
+  "cep": "12345678",
+  "rua": "Av. Empresa",
+  "numero": "100",
+  "bairro": "Centro",
+  "cidade": "São Paulo",
+  "estado": "SP",
+  "inscricaoEstadual": "",
+  "isentoIE": true
+}
+2025-06-15 22:01:47.545 -03:00 [INF] Executing endpoint 'Rommanel.API.Controllers.ClienteController.Post (Rommanel.API)'
+2025-06-15 22:01:47.546 -03:00 [INF] Route matched with {action = "Post", controller = "Cliente"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(Rommanel.Application.Clientes.Commands.CreateClienteCommand) on controller Rommanel.API.Controllers.ClienteController (Rommanel.API).
+2025-06-15 22:01:47.584 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__documento_0='?', @__email_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Clientes" AS c
+    WHERE c."Documento" = @__documento_0 OR c."Email" = @__email_1)
+2025-06-15 22:01:47.799 -03:00 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?', @p5='?' (DbType = Boolean), @p6='?', @p7='?', @p8='?' (DbType = Int32), @p9='?', @p10='?', @p11='?', @p12='?', @p13='?', @p14='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Clientes" ("Id", "DataNascimento", "Documento", "Email", "InscricaoEstadual", "IsentoIE", "Nome", "Telefone", "TipoPessoa", "Endereco_Bairro", "Endereco_CEP", "Endereco_Cidade", "Endereco_Estado", "Endereco_Numero", "Endereco_Rua")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2025-06-15 22:01:47.817 -03:00 [INF] Executing CreatedAtActionResult, writing value of type '<>f__AnonymousType0`1[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-06-15 22:01:47.854 -03:00 [INF] Executed action Rommanel.API.Controllers.ClienteController.Post (Rommanel.API) in 302.6968ms
+2025-06-15 22:01:47.856 -03:00 [INF] Executed endpoint 'Rommanel.API.Controllers.ClienteController.Post (Rommanel.API)'
+2025-06-15 22:01:47.857 -03:00 [INF] HTTP POST /api/clientes finished in 314ms with status 201
+2025-06-15 22:01:47.858 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7103/api/clientes - 201 null application/json; charset=utf-8 323.3421ms
+2025-06-15 22:02:02.238 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7103/api/clientes/search - null null
+2025-06-15 22:02:02.244 -03:00 [INF] HTTP GET /api/clientes/search started. Body: 
+2025-06-15 22:02:02.247 -03:00 [INF] Executing endpoint 'Rommanel.API.Controllers.ClienteController.Search (Rommanel.API)'
+2025-06-15 22:02:02.250 -03:00 [INF] Route matched with {action = "Search", controller = "Cliente"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Rommanel.Application.Clientes.DTOs.ClienteDto]]] Search(System.String, System.String) on controller Rommanel.API.Controllers.ClienteController (Rommanel.API).
+2025-06-15 22:02:02.259 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."DataNascimento", c."Documento", c."Email", c."InscricaoEstadual", c."IsentoIE", c."Nome", c."Telefone", c."TipoPessoa", c."Endereco_Bairro", c."Endereco_CEP", c."Endereco_Cidade", c."Endereco_Estado", c."Endereco_Numero", c."Endereco_Rua"
+FROM "Clientes" AS c
+2025-06-15 22:02:02.263 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Rommanel.Application.Clientes.DTOs.ClienteDto, Rommanel.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-15 22:02:02.265 -03:00 [INF] Executed action Rommanel.API.Controllers.ClienteController.Search (Rommanel.API) in 12.9229ms
+2025-06-15 22:02:02.267 -03:00 [INF] Executed endpoint 'Rommanel.API.Controllers.ClienteController.Search (Rommanel.API)'
+2025-06-15 22:02:02.269 -03:00 [INF] HTTP GET /api/clientes/search finished in 24ms with status 200
+2025-06-15 22:02:02.271 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7103/api/clientes/search - 200 null application/json; charset=utf-8 32.6848ms

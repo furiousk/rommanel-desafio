@@ -1,0 +1,32 @@
+# Build
+bin/
+obj/
+*.user
+*.suo
+
+# Test coverage
+coverage/
+*.coverage
+*.coveragexml
+TestResults/
+*.trx
+
+# EF Core
+Migrations/
+
+# Logs
+*.log
+logs/
+
+# Docker
+*.pid
+.env
+docker-compose.override.yml
+
+# VS Code / JetBrains
+.vscode/
+.idea/
+.vs/
+# Others
+*.DS_Store
+*.swp
