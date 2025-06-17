@@ -64,7 +64,7 @@ cd rommanel-desafio
 .\start-test-report.ps1
 ```
 
-"""Este script:
+Este script:
 
 - Roda os testes unitários
 - Gera a cobertura de testes (`coverage.cobertura.xml`)
