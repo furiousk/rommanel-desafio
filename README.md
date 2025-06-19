@@ -2,6 +2,7 @@
 
 Este repositório apresenta a solução para o desafio técnico proposto pela Rommanel, com foco em arquitetura sólida, qualidade de código, design consistente e automação de pipeline.
 
+---
 
 ## ✅ Funcionalidade
 
@@ -15,6 +16,7 @@ Implementação de um CRUD de cliente com os seguintes campos:
 - Inscrição Estadual ou Isento
 - Endereço completo (CEP, Logradouro, Número, Bairro, Cidade, Estado)
 
+---
 
 ## ⚙️ Tecnologias & Arquitetura
 
@@ -30,6 +32,7 @@ Implementação de um CRUD de cliente com os seguintes campos:
 | UI           | Design customizado inspirado na identidade da Rommanel      |
 | Docker       | Docker Compose com pipeline de testes, cobertura e build    |
 
+---
 
 ## 🧠 Principais decisões arquiteturais
 
@@ -39,6 +42,8 @@ Implementação de um CRUD de cliente com os seguintes campos:
 - **Strategy Pattern**: atualizações parciais sem `if`/`switch`.
 - **Theming Angular Material 19**: tema claro e escuro com tokens M3 e estilo Rommanel.
 - **Logs persistentes**: sistema de logging assíncrono com Serilog.
+
+---
 
 ## 🚀 Como rodar o projeto com Docker
 
@@ -73,6 +78,7 @@ docker compose exec api dotnet ef database update --project Rommanel.API --start
 - Backend Swagger API: http://localhost:5000/swagger
 - PostgreSQL: disponível na porta 5432
 
+---
 
 ## 🧪 Rodar testes com cobertura de código
 ### Para executar os testes e visualizar a cobertura de forma automática:
@@ -84,6 +90,8 @@ docker compose exec api dotnet ef database update --project Rommanel.API --start
 
 - Relatório HTML: http://localhost:5005
 - Arquivo Cobertura: coverage/coverage.cobertura.xml
+
+---
 
 ### 📂 Estrutura resumida
 
@@ -117,6 +125,8 @@ Rommanel/
 ├── start-test-report.sh                 → Pipeline local (Linux/macOS)
 ```
 
+---
+
 ## ✨ Funcionalidades do Frontend
 
 - ✅ Listagem de clientes com filtros dinâmicos reativos (nome, cidade)
@@ -131,13 +141,17 @@ Rommanel/
 
 - ✅ Consumo de API REST com HttpClient e ClienteService
 
-### 📄 Observações finais
+---
+
+## 📄 Observações finais
 
 - O projeto está pronto para ambientes de CI/CD.
 - A camada de testes já verifica regras de negócio críticas.
 - O frontend segue os padrões mais recentes do Angular 17 standalone.
 - A comunicação entre camadas segue SOLID, DRY e KISS.
 
-### 🔗 Autor
+---
+
+## 🔗 Autor
 
 Desenvolvido por Bruno Diogenes Alves para o processo seletivo da Rommanel.
