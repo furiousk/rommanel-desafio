@@ -18,7 +18,15 @@ public class GetClienteByIdHandler(IClienteRepository repository) : IRequestHand
             cliente.Nome,
             cliente.Documento,
             cliente.DataNascimento,
+            cliente.Telefone,
             cliente.Email,
-            cliente.Endereco.Cidade);
+            cliente.InscricaoEstadual ?? "",
+            cliente.IsentoIE,
+            cliente.Endereco.Cep,
+            cliente.Endereco.Logradouro,
+            cliente.Endereco.Numero,
+            cliente.Endereco.Bairro,
+            cliente.Endereco.Cidade,
+            cliente.Endereco.Estado);
     }
 }

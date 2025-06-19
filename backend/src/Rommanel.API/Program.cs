@@ -76,13 +76,10 @@ app.UseMiddleware<RequestLoggingMiddleware>();
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-    //db.Database.Migrate(); //Dev only
+    db.Database.Migrate(); //Dev only
 }
-
-//Como é uma api de testes, deixei o swagger em PRD
-//app.UseSwagger();
-//app.UseSwaggerUI();
-//fim
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseRouting();
 app.UseCors(MyAllowSpecificOrigins);

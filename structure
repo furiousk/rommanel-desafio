@@ -15,3 +15,20 @@ Rommanel/
 ├── frontend/
 │   └── Dockerfile                 
 │   └── rommanel-ui/
+
+
+rommanel-ui/
+├── src/
+│   ├── app/
+│   │   ├── core/
+│   │   ├── shared/
+│   │   ├── features/
+│   │   │   ├── services/
+│   │   │   ├── models/
+│   │   │   ├── pages/
+│   │   │       └──clientes-list/
+│   │   │       └──clientes-form/
+│   │   ├── app-routing.ts
+│   │   └── app.config.ts
+│   └── styles/
+│       └── _rommanel-theme.scss

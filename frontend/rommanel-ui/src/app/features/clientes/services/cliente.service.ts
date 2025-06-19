@@ -13,6 +13,10 @@ export class ClienteService {
     return this.http.get<Cliente[]>(`${this.api}/search`);
   }
 
+  search(nome: string, cidade: string): Observable<Cliente[]> {
+    return this.http.get<Cliente[]>(`${this.api}/search?nome=${nome}&cidade=${cidade}`);
+  }
+
   getById(id: string): Observable<Cliente> {
     return this.http.get<Cliente>(`${this.api}/${id}`);
   }
@@ -22,7 +26,7 @@ export class ClienteService {
   }
 
   update(id: string, patchData: Partial<Cliente>): Observable<any> {
-    return this.http.patch(`${this.api}/${id}`, patchData);
+    return this.http.put(`${this.api}/${id}`, patchData);
   }
 
   delete(id: string): Observable<any> {

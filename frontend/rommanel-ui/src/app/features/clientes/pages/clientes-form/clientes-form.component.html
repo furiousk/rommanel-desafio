@@ -1,0 +1,129 @@
+<div class="rommanel-card rommanel-fade-in">
+  <form [formGroup]="form" (ngSubmit)="save()" class="form-container">
+
+    <fieldset class="endereco-group">
+      <legend>Pessoais</legend>
+
+      <div class="form-row">
+        <mat-form-field appearance="outline" class="rommanel-form-field" floatLabel="always">
+          <mat-label>Nome / Razão Social</mat-label>
+          <input matInput formControlName="nome" required />
+        </mat-form-field>
+      </div>
+
+      <div class="form-row">
+        <mat-form-field appearance="outline" class="rommanel-form-field" floatLabel="always">
+          <mat-label>CPF / CNPJ</mat-label>
+          <input
+            matInput
+            formControlName="documento"
+            required
+          />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="rommanel-form-field" floatLabel="always">
+          <mat-label>{{dataNascimentoLabel}}</mat-label>
+          <input matInput type="date" formControlName="dataNascimento" required />
+        </mat-form-field>
+      </div>
+
+      <div class="form-row">
+        <mat-form-field appearance="outline" class="rommanel-form-field" floatLabel="always">
+          <mat-label>Inscrição Estadual</mat-label>
+          <input matInput formControlName="inscricaoEstadual" />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="rommanel-form-field" floatLabel="always">
+          <mat-label>Isento</mat-label>
+          <mat-select formControlName="isentoIE">
+            <mat-option [value]="true">Sim</mat-option>
+            <mat-option [value]="false">Não</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <mat-error *ngIf="form.hasError('inscricaoEstadualObrigatoria')">
+        Inscrição estadual é obrigatória para pessoa jurídica não isenta.
+      </mat-error>
+      <mat-error *ngIf="form.get('documento')?.hasError('cpfInvalido')">
+        CPF inválido.
+      </mat-error>
+      <mat-error *ngIf="form.get('documento')?.hasError('cnpjInvalido')">
+        CNPJ inválido.
+      </mat-error>
+      <mat-error *ngIf="form.get('dataNascimento')?.hasError('idadeMinima')">
+        Cliente deve ter no mínimo 18 anos.
+      </mat-error>
+    </fieldset>
+
+    <fieldset class="endereco-group">
+      <legend>Contatos</legend>
+      <div class="form-row">
+        <mat-form-field appearance="outline" class="rommanel-form-field" floatLabel="always">
+          <mat-label>Telefone</mat-label>
+          <input matInput formControlName="telefone" required mask="(00) 00000-0000" />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="rommanel-form-field" floatLabel="always">
+          <mat-label>Email</mat-label>
+          <input matInput formControlName="email" required />
+        </mat-form-field>
+      </div>
+      <mat-error *ngIf="form.get('email')?.hasError('email')">
+        Email invalido.
+      </mat-error>
+    </fieldset>
+
+    <fieldset class="endereco-group">
+      <legend>Endereço</legend>
+      <div class="form-row">
+        <mat-form-field class="rommanel-form-field" appearance="outline" floatLabel="always">
+          <mat-label>CEP</mat-label>
+          <input matInput formControlName="cep" mask="00000-000" />
+        </mat-form-field>
+
+        <mat-form-field class="rommanel-form-field" appearance="outline" floatLabel="always">
+          <mat-label>Logradouro</mat-label>
+          <input matInput formControlName="logradouro" />
+        </mat-form-field>
+
+        <mat-form-field class="rommanel-form-field" appearance="outline" floatLabel="always">
+          <mat-label>Número</mat-label>
+          <input matInput formControlName="numero" />
+        </mat-form-field>
+      </div>
+
+      <div class="form-row">
+        <mat-form-field class="rommanel-form-field" appearance="outline" floatLabel="always">
+          <mat-label>Bairro</mat-label>
+          <input matInput formControlName="bairro" />
+        </mat-form-field>
+
+        <mat-form-field class="rommanel-form-field" appearance="outline" floatLabel="always">
+          <mat-label>Cidade</mat-label>
+          <input matInput formControlName="cidade" />
+        </mat-form-field>
+
+        <mat-form-field class="rommanel-form-field" appearance="outline" floatLabel="always">
+          <mat-label>Estado</mat-label>
+          <mat-select formControlName="estado" required>
+            <mat-option *ngFor="let estado of estados" [value]="estado.value">
+              {{ estado.label }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <mat-error *ngIf="form.hasError('api')">
+        {{ form.getError('api') }}
+      </mat-error>
+
+    </fieldset>
+
+    <div class="actions">
+      <button mat-raised-button type="submit" color="primary" class="rommanel-button">
+        Salvar
+      </button>
+    </div>
+  </form>
+</div>

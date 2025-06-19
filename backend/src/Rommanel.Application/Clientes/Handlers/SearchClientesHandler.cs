@@ -18,8 +18,16 @@ public class SearchClientesHandler(IClienteRepository repository) : IRequestHand
             c.Nome,
             c.Documento,
             c.DataNascimento,
+            c.Telefone,
             c.Email,
-            c.Endereco.Cidade
+            c.InscricaoEstadual ?? "",
+            c.IsentoIE,
+            c.Endereco.Cep,
+            c.Endereco.Logradouro,
+            c.Endereco.Numero,
+            c.Endereco.Bairro,
+            c.Endereco.Cidade,
+            c.Endereco.Estado
         ))];
     }
 }

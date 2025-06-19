@@ -7,7 +7,6 @@ export interface Cliente {
   email: string;
   inscricaoEstadual?: string;
   isentoIE: boolean;
-  tipoPessoa: string;
   cep: string;
   logradouro: string;
   numero: string;

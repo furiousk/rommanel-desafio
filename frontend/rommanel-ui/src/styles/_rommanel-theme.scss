@@ -1,0 +1,394 @@
+// Tema Rommanel OTIMIZADO para Angular Material 19
+// Sem warnings e com melhor performance
+
+@use '@angular/material' as mat;
+
+// Tema claro Rommanel (completo com tipografia e densidade)
+$rommanel-light-theme: mat.define-theme((
+  color: (
+    theme-type: light,
+    primary: mat.$violet-palette,
+    tertiary: mat.$yellow-palette,
+  ),
+  typography: (
+    brand-family: 'Roboto',
+    plain-family: 'Roboto',
+  ),
+  density: (
+    scale: 0,
+  )
+));
+
+// Tema escuro Rommanel (apenas cores para evitar duplicação)
+$rommanel-dark-theme: mat.define-theme((
+  color: (
+    theme-type: dark,
+    primary: mat.$violet-palette,
+    tertiary: mat.$yellow-palette,
+  )
+));
+
+// Aplicar tema claro completo (cores + tipografia + densidade)
+:root {
+  @include mat.all-component-themes($rommanel-light-theme);
+  
+  & {
+    // Cores do sistema Material sobrescritas com cores Rommanel
+    --mat-sys-primary: #8b4a9c;
+    --mat-sys-on-primary: #ffffff;
+    --mat-sys-primary-container: #f3e8f7;
+    --mat-sys-on-primary-container: #3e2040;
+    
+    --mat-sys-secondary: #d4af37;
+    --mat-sys-on-secondary: #000000;
+    --mat-sys-secondary-container: #fdf8e7;
+    --mat-sys-on-secondary-container: #735f17;
+    
+    --mat-sys-tertiary: #ff6b9d;
+    --mat-sys-on-tertiary: #ffffff;
+    --mat-sys-tertiary-container: #fff0f3;
+    --mat-sys-on-tertiary-container: #d51c51;
+    
+    --mat-sys-surface: #ffffff;
+    --mat-sys-on-surface: #000000;
+    --mat-sys-surface-variant: #f3e8f7;
+    --mat-sys-on-surface-variant: #6b3a7c;
+    
+    --mat-sys-background: #ffffff;
+    --mat-sys-on-background: #000000;
+    
+    --mat-sys-error: #ff4444;
+    --mat-sys-on-error: #ffffff;
+    
+    // Cores customizadas Rommanel para uso direto
+    --rommanel-primary: #8b4a9c;
+    --rommanel-primary-light: #a85bb8;
+    --rommanel-primary-dark: #6b3a7c;
+    --rommanel-primary-contrast: #ffffff;
+    
+    --rommanel-secondary: #d4af37;
+    --rommanel-secondary-light: #f1cc55;
+    --rommanel-secondary-dark: #ab8d2b;
+    --rommanel-secondary-contrast: #000000;
+    
+    --rommanel-tertiary: #ff6b9d;
+    --rommanel-tertiary-light: #ff8dab;
+    --rommanel-tertiary-dark: #ed326e;
+    --rommanel-tertiary-contrast: #ffffff;
+    
+    // Gradientes Rommanel
+    --rommanel-gradient-primary: linear-gradient(135deg, #a85bb8 0%, #8b4a9c 50%, #6b3a7c 100%);
+    --rommanel-gradient-horizontal: linear-gradient(90deg, #8b4a9c 0%, #a85bb8 100%);
+    --rommanel-gradient-sunset: linear-gradient(135deg, #a85bb8 0%, #d4af37 100%);
+    
+    // Sombras Rommanel
+    --rommanel-shadow-1: 0 2px 4px rgba(139, 74, 156, 0.1);
+    --rommanel-shadow-2: 0 4px 8px rgba(139, 74, 156, 0.15);
+    --rommanel-shadow-3: 0 8px 16px rgba(139, 74, 156, 0.2);
+    
+    // Border radius
+    --rommanel-border-radius: 8px;
+    --rommanel-border-radius-large: 12px;
+  }
+}
+
+// Tema escuro (apenas cores para evitar duplicação de tipografia)
+.dark-theme {
+  @include mat.all-component-colors($rommanel-dark-theme);
+  
+  & {
+    // Cores do sistema Material para tema escuro
+    --mat-sys-primary: #cd9ede;
+    --mat-sys-on-primary: #3e2040;
+    --mat-sys-primary-container: #6b3a7c;
+    --mat-sys-on-primary-container: #f3e8f7;
+    
+    --mat-sys-secondary: #f7e19b;
+    --mat-sys-on-secondary: #735f17;
+    --mat-sys-secondary-container: #ab8d2b;
+    --mat-sys-on-secondary-container: #fdf8e7;
+    
+    --mat-sys-tertiary: #ffb3c6;
+    --mat-sys-on-tertiary: #d51c51;
+    --mat-sys-tertiary-container: #ed326e;
+    --mat-sys-on-tertiary-container: #fff0f3;
+    
+    --mat-sys-surface: #1a1a1a;
+    --mat-sys-on-surface: #ffffff;
+    --mat-sys-surface-variant: #2d2d2d;
+    --mat-sys-on-surface-variant: #cd9ede;
+    
+    --mat-sys-background: #121212;
+    --mat-sys-on-background: #ffffff;
+    
+    // Atualizar cores customizadas para tema escuro
+    --rommanel-primary: #cd9ede;
+    --rommanel-primary-contrast: #3e2040;
+    --rommanel-secondary: #f7e19b;
+    --rommanel-secondary-contrast: #735f17;
+    --rommanel-tertiary: #ffb3c6;
+    --rommanel-tertiary-contrast: #d51c51;
+  }
+}
+
+// Classes utilitárias Rommanel
+.rommanel-primary {
+  color: var(--rommanel-primary) !important;
+}
+
+.rommanel-primary-bg {
+  background-color: var(--rommanel-primary) !important;
+  color: var(--rommanel-primary-contrast) !important;
+}
+
+.rommanel-secondary {
+  color: var(--rommanel-secondary) !important;
+}
+
+.rommanel-secondary-bg {
+  background-color: var(--rommanel-secondary) !important;
+  color: var(--rommanel-secondary-contrast) !important;
+}
+
+.rommanel-tertiary {
+  color: var(--rommanel-tertiary) !important;
+}
+
+.rommanel-tertiary-bg {
+  background-color: var(--rommanel-tertiary) !important;
+  color: var(--rommanel-tertiary-contrast) !important;
+}
+
+.rommanel-gradient {
+  background: var(--rommanel-gradient-primary) !important;
+  color: var(--rommanel-primary-contrast) !important;
+}
+
+// Componentes customizados Rommanel
+.rommanel-toolbar {
+  & {
+    background: var(--rommanel-gradient-horizontal) !important;
+    color: var(--rommanel-primary-contrast) !important;
+  }
+}
+
+.rommanel-card {
+  & {
+    border-radius: var(--rommanel-border-radius-large) !important;
+    box-shadow: var(--rommanel-shadow-2) !important;
+    border: 1px solid rgba(139, 74, 156, 0.1) !important;
+  }
+  
+  .mat-mdc-card-title {
+    & {
+      color: var(--rommanel-primary) !important;
+      font-weight: 500 !important;
+    }
+  }
+  
+  .mat-mdc-card-subtitle {
+    & {
+      color: rgba(0, 0, 0, 0.6) !important;
+    }
+  }
+}
+
+.rommanel-button {
+  & {
+    border-radius: var(--rommanel-border-radius) !important;
+    font-weight: 500 !important;
+    text-transform: none !important;
+    transition: all 0.2s ease-in-out !important;
+  }
+  
+  &:hover {
+    transform: translateY(-1px) !important;
+    box-shadow: var(--rommanel-shadow-2) !important;
+  }
+}
+
+.rommanel-fab {
+  & {
+    background: var(--rommanel-gradient-primary) !important;
+    color: var(--rommanel-primary-contrast) !important;
+    transition: all 0.2s ease-in-out !important;
+  }
+  
+  &:hover {
+    transform: scale(1.05) !important;
+    box-shadow: var(--rommanel-shadow-3) !important;
+  }
+}
+
+// Formulários Rommanel
+.rommanel-form-field {
+  .mat-mdc-text-field-wrapper {
+    &.mdc-text-field--focused {
+      .mat-mdc-form-field-focus-overlay {
+        & {
+          background-color: rgba(139, 74, 156, 0.1) !important;
+        }
+      }
+    }
+  }
+  
+  .mat-mdc-form-field-outline {
+    & {
+      color: rgba(139, 74, 156, 0.3) !important;
+    }
+  }
+  
+  &.mat-focused {
+    .mat-mdc-form-field-outline-thick {
+      & {
+        color: var(--rommanel-primary) !important;
+      }
+    }
+  }
+}
+
+// Tabelas Rommanel
+.rommanel-table {
+  .mat-mdc-header-row {
+    & {
+      background-color: rgba(139, 74, 156, 0.05) !important;
+    }
+    
+    .mat-mdc-header-cell {
+      & {
+        color: var(--rommanel-primary) !important;
+        font-weight: 500 !important;
+      }
+    }
+  }
+  
+  .mat-mdc-row {
+    &:hover {
+      background-color: rgba(139, 74, 156, 0.02) !important;
+    }
+    
+    .mat-mdc-cell {
+      & {
+        border-bottom: 1px solid rgba(139, 74, 156, 0.05) !important;
+      }
+    }
+  }
+}
+
+// Chips de status Rommanel
+.rommanel-chip {
+  &.status-active {
+    background-color: rgba(80, 200, 120, 0.1) !important;
+    color: #50c878 !important;
+  }
+  
+  &.status-inactive {
+    background-color: rgba(158, 158, 158, 0.1) !important;
+    color: #9e9e9e !important;
+  }
+  
+  &.status-pending {
+    background-color: rgba(212, 175, 55, 0.1) !important;
+    color: var(--rommanel-secondary) !important;
+  }
+}
+
+// Paginação Rommanel
+.rommanel-paginator {
+  & {
+    border-top: 1px solid rgba(139, 74, 156, 0.1) !important;
+  }
+  
+  .mat-mdc-paginator-range-label {
+    & {
+      color: rgba(0, 0, 0, 0.6) !important;
+    }
+  }
+  
+  .mat-mdc-icon-button {
+    &:hover {
+      background-color: rgba(139, 74, 156, 0.1) !important;
+    }
+  }
+}
+
+// Animações Rommanel
+@keyframes rommanel-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.rommanel-fade-in {
+  animation: rommanel-fade-in 0.3s ease-in-out;
+}
+
+// Responsividade
+@media (max-width: 768px) {
+  .rommanel-toolbar {
+    .mat-toolbar-row {
+      & {
+        height: 56px !important;
+        padding: 0 16px !important;
+      }
+    }
+  }
+  
+  .rommanel-card {
+    & {
+      margin: 8px !important;
+      border-radius: var(--rommanel-border-radius) !important;
+    }
+  }
+  
+  .rommanel-button {
+    & {
+      min-width: 44px !important;
+      min-height: 44px !important;
+    }
+  }
+}
+
+// Ajustes específicos para tema escuro
+.dark-theme {
+  .rommanel-card {
+    & {
+      background-color: var(--mat-sys-surface) !important;
+      border: 1px solid rgba(139, 74, 156, 0.3) !important;
+    }
+    
+    .mat-mdc-card-subtitle {
+      & {
+        color: rgba(255, 255, 255, 0.6) !important;
+      }
+    }
+  }
+  
+  .rommanel-table {
+    .mat-mdc-header-row {
+      & {
+        background-color: rgba(139, 74, 156, 0.1) !important;
+      }
+    }
+    
+    .mat-mdc-row {
+      &:hover {
+        background-color: rgba(139, 74, 156, 0.05) !important;
+      }
+    }
+  }
+  
+  .rommanel-paginator {
+    .mat-mdc-paginator-range-label {
+      & {
+        color: rgba(255, 255, 255, 0.6) !important;
+      }
+    }
+  }
+}
+

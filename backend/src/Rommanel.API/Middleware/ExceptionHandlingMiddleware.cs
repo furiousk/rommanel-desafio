@@ -36,6 +36,14 @@ public class ExceptionHandlingMiddleware(RequestDelegate next, ILogger<Exception
             var response = new { error = ex.Message };
             await context.Response.WriteAsync(JsonSerializer.Serialize(response));
         }
+        catch (ApplicationException ex)
+        {
+            context.Response.StatusCode = (int)HttpStatusCode.BadRequest;
+            context.Response.ContentType = "application/json";
+
+            var response = new { error = ex.Message };
+            await context.Response.WriteAsync(JsonSerializer.Serialize(response));
+        }
         catch (Exception ex)
         {
             _logger.LogError(ex, "Erro inesperado");

@@ -5,6 +5,14 @@ public record ClienteDto(
     string Nome,
     string Documento,
     DateTime DataNascimento,
+    string Telefone,
     string Email,
-    string Cidade
+    string InscricaoEstadual,
+    bool IsentoIE,
+    string Cep,
+    string Logradouro,
+    string Numero,
+    string Bairro,
+    string Cidade,
+    string Estado
 );

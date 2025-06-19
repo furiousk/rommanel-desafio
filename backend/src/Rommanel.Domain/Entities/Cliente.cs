@@ -81,7 +81,7 @@ public class Cliente
     public void SetName(string name)
     {
         if (string.IsNullOrWhiteSpace(name))
-            throw new ArgumentException("Invalid name.");
+            throw new ArgumentException("Nome inválido.");
 
         Nome = name;
     }
@@ -89,14 +89,14 @@ public class Cliente
     public void SetDocument(string document)
     {
         if (string.IsNullOrWhiteSpace(document))
-            throw new ArgumentException("Invalid document.");
+            throw new ArgumentException("Documento inválido.");
 
         if (document.Length == 11)
             TipoPessoa = TipoPessoa.Fisica;
         else if (document.Length == 14)
             TipoPessoa = TipoPessoa.Juridica;
         else
-            throw new ArgumentException("Document must be 11 (CPF) or 14 (CNPJ) characters.");
+            throw new ArgumentException("O documento deve ter 11 (CPF) ou 14 (CNPJ) caracteres.");
 
         Documento = document;
     }
@@ -104,7 +104,7 @@ public class Cliente
     public void SetEmail(string email)
     {
         if (string.IsNullOrWhiteSpace(email))
-            throw new ArgumentException("Invalid email.");
+            throw new ArgumentException("Email inválido.");
 
         Email = email;
     }
@@ -112,7 +112,7 @@ public class Cliente
     public void SetPhone(string phone)
     {
         if (string.IsNullOrWhiteSpace(phone))
-            throw new ArgumentException("Invalid phone.");
+            throw new ArgumentException("Telefone inválido.");
 
         Telefone = phone;
     }
@@ -120,7 +120,7 @@ public class Cliente
     public void SetBirthDate(DateTime birthDate)
     {
         if (birthDate > DateTime.Today)
-            throw new ArgumentException("Birth date cannot be in the future.");
+            throw new ArgumentException("A data de nascimento não pode estar no futuro.");
 
         DataNascimento = birthDate;
     }
